@@ -20,6 +20,9 @@ app.use(cookieParser());
 app.use(morgan('dev'));
 
 
+const index=require('./routes/index');
+app.use('/',index);
+
 app.listen(process.env.PORT,()=>{
     console.log(`listen on http://localhost:${process.env.PORT}`)
 })
