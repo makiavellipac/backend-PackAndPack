@@ -47,7 +47,7 @@ exports.consultByAge=async(req,res)=>{
         {createdAt:{
             $gt:getDateForConsulting()
         }}
-        ]}
+        ]},{name:1,phone:1}
     )
     res.status(200).json({data})
 }
