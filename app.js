@@ -4,6 +4,7 @@ const morgan = require('morgan');
 const bodyParser = require('body-parser');
 const cookieParser = require('cookie-parser');
 const mongoose = require('mongoose');
+const hbs = require('hbs');
 const path = require('path');
 
 mongoose
@@ -14,6 +15,10 @@ mongoose
 const app=express();
 
 app.use(express.static(path.join(__dirname, 'public')));
+
+app.set('view engine', 'hbs')
+app.set('views', __dirname + '/views')
+
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 app.use(cookieParser());

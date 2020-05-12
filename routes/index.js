@@ -10,7 +10,7 @@ const {
 const router=Router();
 
 router
-.get('/',(req,res)=>res.status(200).send(`Api Ready`))
+.get('/',(req,res)=>res.status(200).render(`index`))
 .post('/newRegistry',newRegistry)
 .get('/consultUser/:userName',consultUser)
 .get('/consultUser',consultUser)
