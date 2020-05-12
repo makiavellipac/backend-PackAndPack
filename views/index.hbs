@@ -1,3 +1,32 @@
-<h1>Hello</h1>
-<br>
-<h2>World</h2>
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Back-End Pack&Pack</title>
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <section class="view_endpoints">
+            <div class="view_endpoints_container_header">
+                <img src='/images/logo.svg' class="logo">
+                <h1>Santiago Alfredo González Mancilla Back-End</h1>
+            </div>
+            <div class="view_endpoints_container_endpoints">
+                <h2>Endpoints</h2>
+                <article>
+                    <span class="methods">.post</span><span class="routes">/newRegistry</span><span class="description"> Crea un nuevo registro</span><br>
+                    <span class="methods">.get</span>    <span class="routes">/consultUser</span><span class="description"> Regresa todos los Usuarios</span><br>
+                    <span class="methods">.get</span>    <span class="routes">/consultUser/:userName</span><span class="description"> Regresa un solo Usuario del que se consulto</span>  <br>
+                    <span class="methods">.delete</span> <span class="routes">/deleteRegistry/:_id</span><span class="description"> Elimina un registro por su Id</span><br>
+                    <span class="methods">.get</span>    <span class="routes">/consultByAge</span><span class="description"> Realiza la consulta y regresa el nombre, teléfono de los hombres mayores de 18 años creados en los ultimos 3 días</span><br>
+                </article>
+            </div>
+           <div class="view_endpoints_container_footer">
+               <img src='/images/github.svg' class="github">
+               <a href="https://github.com/makiavellipac/pp-Santiago-Gonzalez-back">Link del Proyecto</a>
+           </div> 
+        </section>
+    </body>
+</html>
+
+

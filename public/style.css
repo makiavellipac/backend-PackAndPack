@@ -1,0 +1,34 @@
+.logo{
+    width: 180px;
+}
+
+.view_endpoints_container_header{
+    display: flex;
+    padding: 15px;
+}
+
+.view_endpoints_container_header h1{
+    padding-left: 20px;
+}
+
+.view_endpoints{
+    padding: 15px;
+}
+
+.methods, .routes{
+    font-family: monospace;
+    font-weight: bold ;
+}
+.routes{
+    color: blue;
+}
+
+.description{
+    font-weight: bolder;
+}
+.github{
+    width: 50px;
+}
+.view_endpoints_container_footer{
+    padding: 50px;
+}
