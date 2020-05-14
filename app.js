@@ -6,6 +6,7 @@ const cookieParser = require('cookie-parser');
 const mongoose = require('mongoose');
 const hbs = require('hbs');
 const path = require('path');
+const cors=require('cors')
 
 mongoose
   .connect(process.env.DB, { useNewUrlParser: true, useUnifiedTopology: true, useFindAndModify: false })
@@ -18,6 +19,8 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.set('view engine', 'hbs')
 app.set('views', __dirname + '/views')
+
+app.use(cors({credentials:true,origin:[process.env.FRONTENDPOINT]}))
 
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
